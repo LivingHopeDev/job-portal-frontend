@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div className=" shawdow-md w-full fixed top-0 left-0 font-roboto">
-      <div className="bg-[#0984e3] md:flex items-center justify-between py-6 md:py-2 md:px-10 px-7">
+      <div className="bg-[#0984e3] md:flex items-center justify-between py-6 md:py-[.5rem] md:px-10 px-7">
         <div className="text-xl">
           <Link to={""}>Logo</Link>
         </div>
@@ -33,7 +33,7 @@ const Navbar = () => {
           }`}
         >
           {links.map((link) => (
-            <li key={link.name} className="my-7 md:ml-8 hover:text-white">
+            <li key={link.name} className="my-7 md:ml-8 hover:text-[#dfe6e9]">
               <Link to={link.link} className="text-lg">
                 {link.name}
               </Link>
